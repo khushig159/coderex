@@ -1,0 +1,23 @@
+/* IridescentCursor.module.css */
+.iridescentCursor {
+  position: fixed;
+  border-radius: 50%;
+  z-index: 99999;
+  pointer-events: none;
+  opacity: 0.67;
+  transition: left 0.13s, top 0.13s;
+  background: repeating-conic-gradient(
+    from 0deg,
+    #d1f5fa 0deg 40deg,
+    #bbcde5 40deg 70deg,
+    #ffd6df 70deg 120deg,
+    #dbbfff 120deg 150deg,
+    #fef6c9 150deg 210deg,
+    #97c3e6 210deg 260deg,
+    #ffe2d1 260deg 320deg,
+    #d1f5fa 320deg 360deg
+  );
+  filter: blur(22px) saturate(1.5) contrast(1.2);
+  box-shadow: 0 0 42px 0 rgba(75,60,115,0.08);
+  mix-blend-mode: screen; /* for subtle overlay effect */
+}

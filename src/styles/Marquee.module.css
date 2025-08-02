@@ -1,0 +1,66 @@
+.marqueeWrapper {
+    margin-top: 50px;
+  overflow: hidden;
+    margin-bottom: 50px;
+  width: 200%;
+  /* padding: 20px 0; */
+  position: relative;
+}
+ h3{
+    margin-top: 100px;
+    font-family: 'Inter',sans-serif;
+    font-weight: 400;
+    font-size: 23px;
+    text-align: center;
+}
+ p{
+    color: #818181;
+    font-family: 'Inter',sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    text-align: center;
+}
+.marqueeTrack {
+  display: inline-flex;
+  gap: 30px;
+  animation: scroll 20s linear infinite;
+  overflow: hidden; /* prevent scroll */
+}
+
+.imageContainer{
+  flex: 0 0 auto;
+  margin: 0 10px;
+  overflow: hidden; /* prevents image scaling overflow */
+  border-radius: 5px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.imageContainer img {
+  height: 250px;
+  width: auto;
+  display: block;
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Hover logic */
+.imageContainer:hover {
+  transform: scale(0.97); /* container zoom out */
+}
+
+.imageContainer:hover img {
+  transform: scale(1.1); /* image zoom in */
+}
+
+/* Stop animation on hover */
+.marqueeWrapper:hover .marqueeTrack {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}

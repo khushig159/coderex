@@ -1,0 +1,251 @@
+.container{
+    width: 100%;
+    height: 100%;
+}
+.imageflex{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* margin-top: 60px; */
+    padding: 0 0px;
+    background-color: rgba(235, 235, 225, 0.658);
+}
+.card,
+.card2,
+.features {
+  will-change: transform, opacity;
+}
+.grid{
+    overflow-y: hidden;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.card img{
+    width: 100px;
+}
+.card h3{
+    font-family: 'work sans',sans-serif;
+    color: #484848;
+    margin-top: 50px;
+    font-size: 15px;
+    font-weight: 600;
+}
+.card p{
+    font-family: 'work sans',sans-serif;
+    color: #818181;
+    font-weight: 500;
+    margin-top: 14px;
+    width: 70%;
+    text-align: center;
+    font-size: 12px;
+}
+.flexsecond{
+    margin: 60px ;
+    display: flex;
+    width: 100%;
+    gap: 70px;
+}
+.card2{
+    width: 43%;
+    height: 300px;
+    overflow: hidden;
+    will-change: transform;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+.card2:nth-child(2){
+    margin-right: 20px;
+}
+.overlay2 h3{
+    text-align: right;
+    margin-right: 20px;
+}
+.overlay2 p{
+    text-align: right;
+    margin-right: 20px;
+}
+.overlay1{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.overlay1  h2{
+    font-family: 'Inter';
+    font-weight: 400;
+}
+.overlay1 p{
+    font-family: 'Inter';
+    font-weight: 300;
+    text-align: left;
+    font-size: 15px;
+    /* margin-top: -10px; */
+}
+.overlay1 button, .overlay2 button{
+    border: none;
+    outline: none;
+    background-color: rgba(116, 34, 34, 0.63);
+    color: #fff;
+    font-family: 'Inter';
+    font-size: 10px;
+    padding: 5px 25px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.overlay2{
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    justify-content: end;
+    margin-top: 90px;
+}
+.overlay2 h2,p{
+    color: #484848;
+    font-family: 'Inter',sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    margin-right: 20px;
+}
+.overlay2 p{
+    font-size: 15px;
+    margin-top: 0px;
+}
+.overlay2 button{
+    margin-right: 20px;
+}
+.flexthird{
+    /* text-align: center; */
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 40px;
+}
+.scrollimage{
+    width: 50%;
+}
+.image{
+    width: 100%;
+    height: 500px;
+}
+.grid{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    /* overflow-y: hidden; */
+}
+.gridflex{
+    display: flex;
+    height: 50%;
+    /* flex: 1; */
+}
+.gridflex img{
+    width: 50%;
+    /* height: 50%; */
+}
+.gridflex .gridflexcard{
+    width: 50%;
+    border: 15px solid rgb(231, 241, 245);
+}
+
+.features{
+    text-align: center;
+}
+.features h3{
+    font-family: 'Inter',sans-serif;
+    font-weight: 400;
+    font-size: 23px;
+}
+.features p{
+    color: #818181;
+    font-family: 'Inter',sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+}
+.gridflexcard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.gridflexcard img{
+    width: 50px;
+}
+.gridflexcard h3{
+    font-size: 12px;
+    color: #818181;
+    font-family: 'Inter',sans-serif;
+    font-weight: 300;
+    margin-top: 20px;
+}
+.gridflexcard button{
+    border: none;
+    outline: none;
+    background-color: rgba(116, 34, 34, 0.836);
+    color: #fff;
+    font-family: 'Inter';
+    font-size: 10px;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+.scrollimage {
+  overflow: hidden;
+  position: relative;
+}
+
+.sliderWrapper {
+  display: flex;
+  width: 200%;
+  height: 100%;
+  transition: transform 0.6s ease-in-out;
+}
+
+.image {
+  width: 100%;
+  height: 500px;
+background-size: cover;
+  background-position: center;
+    /* flex: 0 0 50%; */
+}
+
+.buttons {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.buttons button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buttons button.active,
+.buttons button:hover {
+  background-color: #ffffff;
+}
+@media (max-width:1025px){
+    .card2{
+        width:40%
+    }
+}
+@media (max-width:769px){
+    .card2{
+        width:45%
+    }
+    .flexsecond{
+        margin-left: 20px;
+        gap: 30px;
+    }
+}
