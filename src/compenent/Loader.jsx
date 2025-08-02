@@ -114,7 +114,7 @@ const Loader = ({ onLoadingComplete }) => {
               key="line2"
             >
               <h1 className={styles.loadingMessage2}>
-                WEB EXPERIENCE
+                DESIGNING EXPERIENCE
               </h1>
             </motion.div>
           )}
