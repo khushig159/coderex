@@ -6,9 +6,9 @@ function Three() {
     <>
     <div className='absolute top-[12rem] left-0 text-[3rem] overflow-y-hidden z-11 w-[30rem] text-[#F5EAD7] cont'>Create your dream home with us...</div>
     <div className='h-full w-full'>
-         {/* <Spline
+         <Spline
         scene="https://prod.spline.design/RHw9trcLnpEDu9lN/scene.splinecode" 
-      /> */}
+      />
 
     </div>
     <div className='h-[3rem] w-full absolute bottom-0 left-0 bg-black box z-10'>
