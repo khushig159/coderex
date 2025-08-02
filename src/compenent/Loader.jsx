@@ -27,7 +27,7 @@ const Loader = ({ onLoadingComplete }) => {
         }
         return prevProgress + 1;
       });
-    }, 30);
+    }, 20);
     return () => clearInterval(interval);
   }, [onLoadingComplete, isFadingOut]);
 

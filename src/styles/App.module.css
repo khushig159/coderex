@@ -1,3 +1,7 @@
 *{
     overflow-x: hidden;
 }
+body
+{
+    background-color: #f3e3e3;
+}
